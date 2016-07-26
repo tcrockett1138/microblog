@@ -12,7 +12,7 @@ def index():
         },
         {
             'author': {'nickname': 'Ethos'},
-            'body': {'For every bottle of me, Starbucks will donate 5 cents because that is all they can afford from selling $5 cups of coffee'}
+            'body': 'For every bottle of me, Starbucks will donate 5 cents because that is all they can afford from selling $5 cups of coffee'
         }
     ]
     return render_template('index.html',
