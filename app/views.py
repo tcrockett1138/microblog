@@ -45,9 +45,10 @@ def logout():
 
 @oid.after_login
 def after_login(resp):
-# Yahoo OpenID response doesn't seem to return an email, so we cannot use this block
-#    if resp.email is None or resp.email == "":
-#        flash('Invalid login.  Please try again.')
+# No email associated with my Yahoo profile, so just add a dummy domain
+    if resp.email is None or resp.email == "":
+        #flash('Invalid login.  Please try again.')
+        resp.email = resp.nickname + '@foo.com'
 #        return redirect(url_for('login'))
     user = User.query.filter_by(email=resp.email).first()
     if user is None:
@@ -71,3 +72,18 @@ def load_user(id):
 @app.before_request
 def before_request():
     g.user = current_user
+
+@app.route('/usr/<nickname>')
+@login_required
+def user(nickname):
+    user = User.query.filter_by(nickname=nickname).first()
+    if user == None:
+        flash('User %s is not found.' % nickname)
+        return redirect(url_for('index'))
+    posts = [
+        {'author': user, 'body': 'Test post #1'},
+        {'author': user, 'body': 'Test post #2'}
+    ]
+    return render_template('user.html',
+                            user=user,
+                            posts=posts)
