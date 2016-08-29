@@ -23,7 +23,7 @@ class TestCase(unittest.TestCase):
         db.drop_all()
 
     def test_avatar(self):
-        u = User(nickname='john', email='tim@example.com')
+        u = User(nickname='john', email='john@example.com')
         avatar = u.avatar(128)
         expected = 'http://www.gravatar.com/avatar/d4c74594d841139328695756648b6bd6'
         assert avatar[0:len(expected)] == expected
