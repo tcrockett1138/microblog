@@ -3,4 +3,4 @@ python:
   - "3.5"
 
 script:
-  - "./tests.py"
+  - "python tests.py"
