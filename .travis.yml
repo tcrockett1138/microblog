@@ -1,6 +1,7 @@
 env:
-  - IMAGE_NAME=microblog
-  - REPOSITORY=tcrockett
+  global:
+    - IMAGE_NAME=microblog
+    - REPOSITORY=tcrockett
 
 sudo: required
 services:
