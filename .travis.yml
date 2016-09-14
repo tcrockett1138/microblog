@@ -13,7 +13,7 @@ python:
 
 script:
   - "mkdir tmp"
-  - "python bin/tests.py"
+  - "python tests.py"
 
 after_success:
 # - docker build -t tcrockett/microblog
