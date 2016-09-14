@@ -1,7 +1,6 @@
 env:
-  - AWS_DEFAULT_REGION=us-west-2
   - IMAGE_NAME=microblog
-  - REPOSITORY=https://hub.docker.com/tcrockett
+  - REPOSITORY=tcrockett
 
 sudo: required
 services:
