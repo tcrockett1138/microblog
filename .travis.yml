@@ -1,3 +1,12 @@
+env:
+  - AWS_DEFAULT_REGION = us-west-2
+  - IMAGE_NAME = microblog
+  - REMOTE_IMAGE_URL = https://hub.docker.com/tcrockett
+
+sudo: required
+services:
+  - docker
+
 language: python
 python:
   - "3.5"
@@ -5,6 +14,10 @@ python:
 script:
   - "mkdir tmp"
   - "python tests.py"
+
+after_success:
+# - docker build -t tcrockett/microblog
+  - bin/docker_push.sh
 
 notifications:
   slack:

@@ -4,8 +4,40 @@
 		"selected_items":
 		[
 			[
+				"MA",
+				"MAIL_PASSWORD"
+			],
+			[
+				"err",
+				"errorhandler"
+			],
+			[
 				"var",
 				"var	context variable (var)"
+			],
+			[
+				"ta",
+				"table	Tag"
+			],
+			[
+				"login_",
+				"login_required"
+			],
+			[
+				"SQ",
+				"SQLALCHEMY_MIGRATE_REPO"
+			],
+			[
+				"SQL",
+				"SQLALCHEMY_MIGRATE_REPO"
+			],
+			[
+				"version",
+				"version_control"
+			],
+			[
+				"s",
+				"SQLALCHEMY_DATABASE_URI"
 			],
 			[
 				"openi",
@@ -27,32 +59,7 @@
 			"file": "app/__init__.py",
 			"settings":
 			{
-				"buffer_size": 102,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "app/views.py",
-			"settings":
-			{
-				"buffer_size": 1223,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "config.py",
-			"settings":
-			{
-				"buffer_size": 404,
-				"line_ending": "Windows",
-				"name": "WTF_CSRF_ENABLED = True"
-			}
-		},
-		{
-			"file": "app/forms.py",
-			"settings":
-			{
-				"buffer_size": 265,
+				"buffer_size": 1328,
 				"line_ending": "Windows"
 			}
 		},
@@ -65,6 +72,105 @@
 			}
 		},
 		{
+			"file": "runprod.py",
+			"settings":
+			{
+				"buffer_size": 67,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views.py",
+			"settings":
+			{
+				"buffer_size": 3909,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config.py",
+			"settings":
+			{
+				"buffer_size": 811,
+				"line_ending": "Windows",
+				"name": "WTF_CSRF_ENABLED = True"
+			}
+		},
+		{
+			"file": "app/forms.py",
+			"settings":
+			{
+				"buffer_size": 1076,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/models.py",
+			"settings":
+			{
+				"buffer_size": 1634,
+				"line_ending": "Unix",
+				"name": "models.py"
+			}
+		},
+		{
+			"file": "db_create.py",
+			"settings":
+			{
+				"buffer_size": 500,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "db_migrate.py",
+			"settings":
+			{
+				"buffer_size": 858,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "db_upgrade.py",
+			"settings":
+			{
+				"buffer_size": 323,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "db_downgrade.py",
+			"settings":
+			{
+				"buffer_size": 401,
+				"line_ending": "Unix",
+				"name": "#!/usr/local/bin/python"
+			}
+		},
+		{
+			"file": "tests.py",
+			"settings":
+			{
+				"buffer_size": 1309,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/templates/base.html",
+			"settings":
+			{
+				"buffer_size": 694,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/templates/index.html",
+			"settings":
+			{
+				"buffer_size": 221,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "app/templates/login.html",
 			"settings":
 			{
@@ -73,22 +179,73 @@
 			}
 		},
 		{
-			"file": "app/templates/base.html",
+			"file": "app/templates/edit.html",
 			"settings":
 			{
-				"buffer_size": 490,
+				"buffer_size": 678,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/templates/user.html",
+			"settings":
+			{
+				"buffer_size": 633,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/templates/post.html",
+			"settings":
+			{
+				"buffer_size": 190,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/templates/404.html",
+			"settings":
+			{
+				"buffer_size": 162,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "{% extends \"base.html\" %}\n{% block content %}\n<h1>Hello, {{ user.nickname }}!</h1>\n{% for post in posts %}\n<div>\n  <p>\n    {{ post.author.nickname }} says: <b>{{ post.body }}</b>\n  </p>\n</div>\n{% endfor %}\n{% endblock %}\n",
-			"file": "app/templates/index.html",
-			"file_size": 232,
-			"file_write_time": 131140498441963716,
+			"file": "app/templates/500.html",
 			"settings":
 			{
-				"buffer_size": 221,
+				"buffer_size": 254,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "\n  BRANCH:  On branch `master` tracking `origin/master`.\n  ROOT:    C:/Users/039115/Documents/development/flask/microblog\n  HEAD:    8982af4 Add slack notifications\n\n    Your working directory is clean.\n\n  ###################                   ###############\n  ## SELECTED FILE ##                   ## ALL FILES ##\n  ###################                   ###############\n\n  [o] open file                         [a] stage all unstaged files\n  [s] stage file                        [A] stage all unstaged and untracked files\n  [u] unstage file                      [U] unstage all staged files\n  [d] discard changes to file           [D] discard all unstaged changes\n  [h] open file on remote\n  [M] launch external merge tool for conflict\n\n  [l] diff file inline                  [f] diff all files\n  [e] diff file                         [F] diff all cached files\n\n  #############                         #############\n  ## ACTIONS ##                         ## STASHES ##\n  #############                         #############\n\n  [c] commit                            [t][a] apply stash\n  [C] commit, including unstaged        [t][p] pop stash\n  [m] amend previous commit             [t][s] show stash\n  [P] push current branch               [t][c] create stash\n                                        [t][u] create stash including untracked files\n  [i] ignore file                       [t][d] discard stash\n  [I] ignore pattern\n\n  ###########\n  ## OTHER ##\n  ###########\n\n  [r]         refresh status\n  [?]         toggle this help menu\n  [tab]       transition to next dashboard\n  [SHIFT-tab] transition to previous dashboard\n  [.]         move cursor to next file\n  [,]         move cursor to previous file\n\n-\n\n",
+			"settings":
+			{
+				"buffer_size": 1716,
+				"line_ending": "Windows",
+				"name": "STATUS: microblog",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"file": ".gitignore",
+			"settings":
+			{
+				"buffer_size": 31,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "sudo: required\n\nlanguage: python\npython:\n  - \"3.5\"\n\nscript:\n  - \"mkdir tmp\"\n  - \"python tests.py\"\n\nafter_success:\n  docker build -t tcrockett/microblog\n\nnotifications:\n  slack:\n    secure: RIM+1XR3pbwa9dvgbZAdVTpPKxR+225XBz2Fi5Q3ghURqHfdtVGW9cHz7NqpPzZSpViep2lFcd4rcwUH0Ar4sAZIZY8aPXMv2dCGbNqb2aBwfxMjHRkhbvjPFZ7TX2OOYWTHnmXk9RZugbtdhCwNpOfdVcZ/YHKWAonXOTmw2MOop+S7m2a8ugpvT9sWM/XnRiqVNTtzX6MJO5RT9GAlVAAoLqafp+MhqqcKY79WfKmwTO0LpjQGmNMizCAiBMf42sK8lllug7sL1Q8prQJ0MYHLP+Fz0KnKuV0e+bXFHnF310txFKqUPwfDm8UHGxs+zBj6ASjCGbGOlnqJzwB5YFGxmaNHBunk2xNm3qJVeAQJS75cK4zDJa3vrYf1bTnVaI4nzUS7/5xzgU3ZCgT9oNBwe281n9u/eXzo95gOjWui1LcwDrufOX0ZPMG1j526pHT8hGbir6O90x7TRcH/spuHUkCslzr4G/27JbgBgNKg0X2xZhXqGlsKl8VeRFGJrP9Q6KT0ygfTvOPVNin2N3kbqfS6Hdd3mIKt1K83dS+TWl85eRfV4ZR8SqZbGnzaiAjex/Vnk7CzSj+7CIGTQP0tfyu3xGLrLoMmrGAxUTJ7dxPYshG7X8qTjP8QDO8Kne8BfnH533yFNVptnA7UGlGHUVHYqQXTdTG0RXvcLws=\n",
+			"file": ".travis.yml",
+			"file_size": 804,
+			"file_write_time": 131169880853266277,
+			"settings":
+			{
+				"buffer_size": 874,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -100,9 +257,21 @@
 	"command_palette":
 	{
 		"height": 375.0,
-		"last_filter": "git",
+		"last_filter": "inst",
 		"selected_items":
 		[
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"status",
+				"git: status"
+			],
 			[
 				"git",
 				"git: status"
@@ -124,10 +293,6 @@
 				"Package Control: Remove Package"
 			],
 			[
-				"inst",
-				"Package Control: Install Package"
-			],
-			[
 				"inde",
 				"Indentation: Reindent Lines"
 			],
@@ -146,10 +311,6 @@
 			[
 				"gitsa",
 				"GitSavvy: help"
-			],
-			[
-				"ins",
-				"Package Control: Install Package"
 			],
 			[
 				"gits",
@@ -191,18 +352,29 @@
 	},
 	"file_history":
 	[
+		"/C/Users/039115/Documents/development/flask/microblog/app/.travis.yml",
+		"/C/Users/039115/AppData/Roaming/Sublime Text 3/Packages/Python PEP8 Autoformat/Default (Windows).sublime-keymap",
+		"/C/Users/039115/AppData/Roaming/Sublime Text 3/Packages/Djaneiro/Settings/Python (Django).sublime-settings",
+		"/C/Users/039115/AppData/Roaming/Sublime Text 3/Packages/User/Python (Django).sublime-settings",
+		"/C/Users/039115/AppData/Roaming/Sublime Text 3/Packages/SublimeREPL/SublimeREPL.sublime-settings",
+		"/C/Users/039115/AppData/Roaming/Sublime Text 3/Packages/User/SublimeREPL.sublime-settings",
+		"/C/temp/user.html",
+		"/C/Users/039115/AppData/Local/Temp/7zO8C626AC7/views.py",
+		"/C/Users/039115/AppData/Roaming/Sublime Text 3/Packages/Emmet/Default (Windows).sublime-keymap",
+		"/C/Users/039115/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/C/Users/039115/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/039115/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/039115/AppData/Roaming/Sublime Text 3/Packages/Djaneiro/Settings/HTML (Django).sublime-settings",
+		"/C/Users/039115/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 		"/C/Users/039115/AppData/Roaming/Sublime Text 3/Packages/User/HTML (Django).sublime-settings",
+		"/C/Users/039115/AppData/Local/Temp/7zO0ACE55D2/__init__.py",
 		"/C/Users/039115/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/.jsbeautifyrc",
 		"/C/Users/039115/AppData/Roaming/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
 		"/C/Users/039115/AppData/Roaming/Sublime Text 3/Packages/User/HTML.sublime-settings",
 		"/C/Users/039115/AppData/Roaming/Sublime Text 3/Packages/User/JSON.sublime-settings",
-		"/C/Users/039115/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
-		"/C/Users/039115/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/C/temp/Dockerfile",
 		"/C/Users/039115/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/HTMLPrettify.sublime-settings",
-		"/C/Users/039115/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
 		"/C/Users/039115/AppData/Roaming/Sublime Text 3/Packages/HTML-CSS-JS Prettify/Default (Windows).sublime-keymap",
-		"/C/Users/039115/AppData/Roaming/Sublime Text 3/Packages/Djaneiro/Settings/HTML (Django).sublime-settings",
 		"/C/Users/039115/Documents/development/flask/microblog/requirements.txt",
 		"/C/Users/039115/AppData/Roaming/Sublime Text 3/Packages/SideBarEnhancements/Side Bar.sublime-settings",
 		"/C/Users/039115/Documents/development/flask/microblog/microblog.sublime-project",
@@ -237,6 +409,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"var",
+			"format",
 			"tab",
 			"\n	\"font_size\": 11,\n	\"ignored_packages\":\n	[",
 			"\"color_scheme\": \"Packages/Monokai Neue/Monokai-Neue.tmTheme\",",
@@ -260,7 +434,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -290,7 +464,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 23,
 					"type": "text"
 				},
 				{
@@ -299,125 +473,33 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 102,
+						"buffer_size": 1328,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								80,
-								80
+								231,
+								231
 							]
 						],
 						"settings":
 						{
 							"git_savvy.file_path": "C:\\Users\\039115\\Documents\\development\\flask\\microblog\\app\\__init__.py",
 							"git_savvy.repo_path": "C:/Users/039115/Documents/development/flask/microblog",
-							"syntax": "Packages/Python/Python.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/views.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1223,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								243,
-								243
-							]
-						],
-						"settings":
-						{
-							"git_savvy.file_path": "C:\\Users\\039115\\Documents\\development\\flask\\microblog\\app\\views.py",
-							"git_savvy.repo_path": "C:/Users/039115/Documents/development/flask/microblog",
 							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "config.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 404,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								404,
-								404
-							]
-						],
-						"settings":
-						{
-							"auto_name": "WTF_CSRF_ENABLED = True",
-							"git_savvy.file_path": "C:\\Users\\039115\\Documents\\development\\flask\\microblog\\config.py",
-							"git_savvy.repo_path": "C:/Users/039115/Documents/development/flask/microblog",
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "app/forms.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 265,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								11,
-								11
-							]
-						],
-						"settings":
-						{
-							"git_savvy.file_path": "C:\\Users\\039115\\Documents\\development\\flask\\microblog\\app\\forms.py",
-							"git_savvy.repo_path": "C:/Users/039115/Documents/development/flask/microblog",
-							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
+					"buffer": 2,
 					"file": "run.py",
 					"semi_transient": false,
 					"settings":
@@ -429,7 +511,7 @@
 						"selection":
 						[
 							[
-								80,
+								0,
 								80
 							]
 						],
@@ -443,37 +525,279 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 16,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 1,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 6,
-					"file": "app/templates/login.html",
+					"buffer": 3,
+					"file": "runprod.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 962,
+						"buffer_size": 67,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								470,
-								470
+								52,
+								52
 							]
 						],
 						"settings":
 						{
-							"git_savvy.file_path": "C:\\Users\\039115\\Documents\\development\\flask\\microblog\\app\\templates\\login.html",
+							"git_savvy.file_path": "C:\\Users\\039115\\Documents\\development\\flask\\microblog\\runprod.py",
 							"git_savvy.repo_path": "C:/Users/039115/Documents/development/flask/microblog",
-							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage"
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/views.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3909,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3811,
+								3811
+							]
+						],
+						"settings":
+						{
+							"git_savvy.file_path": "C:\\Users\\039115\\Documents\\development\\flask\\microblog\\app\\views.py",
+							"git_savvy.repo_path": "C:/Users/039115/Documents/development/flask/microblog",
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1177.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "config.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 811,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								811,
+								811
+							]
+						],
+						"settings":
+						{
+							"auto_name": "WTF_CSRF_ENABLED = True",
+							"git_savvy.file_path": "C:\\Users\\039115\\Documents\\development\\flask\\microblog\\config.py",
+							"git_savvy.repo_path": "C:/Users/039115/Documents/development/flask/microblog",
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/forms.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1076,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								669,
+								669
+							]
+						],
+						"settings":
+						{
+							"git_savvy.file_path": "C:\\Users\\039115\\Documents\\development\\flask\\microblog\\app\\forms.py",
+							"git_savvy.repo_path": "C:/Users/039115/Documents/development/flask/microblog",
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/models.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1634,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								520,
+								520
+							]
+						],
+						"settings":
+						{
+							"auto_name": "models.py",
+							"git_savvy.file_path": "C:\\Users\\039115\\Documents\\development\\flask\\microblog\\app\\models.py",
+							"git_savvy.repo_path": "C:/Users/039115/Documents/development/flask/microblog",
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 315.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "db_create.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 500,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								236,
+								236
+							]
+						],
+						"settings":
+						{
+							"git_savvy.file_path": "C:\\Users\\039115\\Documents\\development\\flask\\microblog\\db_create.py",
+							"git_savvy.repo_path": "C:/Users/039115/Documents/development/flask/microblog",
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 19,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "db_migrate.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 858,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								858,
+								858
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"git_savvy.file_path": "C:\\Users\\039115\\Documents\\development\\flask\\microblog\\db_migrate.py",
+							"git_savvy.repo_path": "C:/Users/039115/Documents/development/flask/microblog",
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 18,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "db_upgrade.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 323,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"git_savvy.file_path": "C:\\Users\\039115\\Documents\\development\\flask\\microblog\\db_upgrade.py",
+							"git_savvy.repo_path": "C:/Users/039115/Documents/development/flask/microblog",
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 17,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "db_downgrade.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 401,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								401,
+								401
+							]
+						],
+						"settings":
+						{
+							"auto_name": "#!/usr/local/bin/python",
+							"git_savvy.file_path": "C:\\Users\\039115\\Documents\\development\\flask\\microblog\\db_upgrade.py",
+							"git_savvy.repo_path": "C:/Users/039115/Documents/development/flask/microblog",
+							"syntax": "Packages/Python/Python.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -483,20 +807,57 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "app/templates/base.html",
+					"buffer": 12,
+					"file": "tests.py",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 490,
+						"buffer_size": 1309,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								490,
-								490
+								593,
+								593
+							]
+						],
+						"settings":
+						{
+							"git_savvy.file_path": "C:\\Users\\039115\\Documents\\development\\flask\\microblog\\tests.py",
+							"git_savvy.repo_path": "C:/Users/039115/Documents/development/flask/microblog",
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 10,
+			"sheets":
+			[
+				{
+					"buffer": 13,
+					"file": "app/templates/base.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 694,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								393,
+								393
 							]
 						],
 						"settings":
@@ -511,17 +872,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 6,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 8,
+					"buffer": 14,
 					"file": "app/templates/index.html",
 					"semi_transient": false,
 					"settings":
@@ -549,7 +904,283 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 22,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "app/templates/login.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 962,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								371,
+								371
+							]
+						],
+						"settings":
+						{
+							"git_savvy.file_path": "C:\\Users\\039115\\Documents\\development\\flask\\microblog\\app\\templates\\login.html",
+							"git_savvy.repo_path": "C:/Users/039115/Documents/development/flask/microblog",
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 20,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "app/templates/edit.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 678,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								456,
+								456
+							]
+						],
+						"settings":
+						{
+							"git_savvy.file_path": "C:\\Users\\039115\\Documents\\development\\flask\\microblog\\app\\templates\\edit.html",
+							"git_savvy.repo_path": "C:/Users/039115/Documents/development/flask/microblog",
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "app/templates/user.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 633,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								101,
+								101
+							]
+						],
+						"settings":
+						{
+							"git_savvy.file_path": "C:\\Users\\039115\\Documents\\development\\flask\\microblog\\app\\templates\\user.html",
+							"git_savvy.repo_path": "C:/Users/039115/Documents/development/flask/microblog",
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 21,
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "app/templates/post.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 190,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								160,
+								160
+							]
+						],
+						"settings":
+						{
+							"git_savvy.file_path": "C:\\Users\\039115\\Documents\\development\\flask\\microblog\\app\\templates\\post.html",
+							"git_savvy.repo_path": "C:/Users/039115/Documents/development/flask/microblog",
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "app/templates/404.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 162,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								159,
+								159
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"git_savvy.file_path": "C:\\Users\\039115\\Documents\\development\\flask\\microblog\\app\\templates\\404.html",
+							"git_savvy.repo_path": "C:/Users/039115/Documents/development/flask/microblog",
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "app/templates/500.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 254,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								254,
+								254
+							]
+						],
+						"settings":
+						{
+							"git_savvy.file_path": "C:\\Users\\039115\\Documents\\development\\flask\\microblog\\app\\templates\\500.html",
+							"git_savvy.repo_path": "C:/Users/039115/Documents/development/flask/microblog",
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1716,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								333,
+								333
+							]
+						],
+						"settings":
+						{
+							"__vi_external_disable": false,
+							"git_savvy.help_hidden": false,
+							"git_savvy.interface": "status",
+							"git_savvy.repo_path": "C:/Users/039115/Documents/development/flask/microblog",
+							"git_savvy.status_view": true,
+							"git_savvy.tabbable": true,
+							"syntax": "Packages/GitSavvy/syntax/status.sublime-syntax",
+							"tab_size": 2,
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": ".gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 31,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								30,
+								30
+							]
+						],
+						"settings":
+						{
+							"git_savvy.file_path": "C:\\Users\\039115\\Documents\\development\\flask\\microblog\\.gitignore",
+							"git_savvy.repo_path": "C:/Users/039115/Documents/development/flask/microblog",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": ".travis.yml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 874,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								151,
+								151
+							]
+						],
+						"settings":
+						{
+							"git_savvy.file_path": "C:\\Users\\039115\\Documents\\development\\flask\\microblog\\.travis.yml",
+							"git_savvy.repo_path": "C:/Users/039115/Documents/development/flask/microblog",
+							"syntax": "Packages/YAML/YAML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -578,19 +1209,12 @@
 				0,
 				2,
 				1
-			],
-			[
-				2,
-				0,
-				3,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.33,
-			0.66,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -642,7 +1266,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
@@ -650,7 +1274,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 182.0,
+	"side_bar_width": 113.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
